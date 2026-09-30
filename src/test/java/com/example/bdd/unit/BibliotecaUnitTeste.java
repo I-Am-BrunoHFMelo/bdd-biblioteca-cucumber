@@ -40,7 +40,7 @@ class BibliotecaUnitTeste {
         biblioteca.emprestar("Bruno", "Clean Code");
 
         RuntimeException erro = assertThrows(RuntimeException.class,
-                () -> biblioteca.emprestar("Ana", "Clean Code"));
+                () -> biblioteca.emprestar("Adrias", "Clean Code"));
         assertEquals("Livro indisponivel", erro.getMessage());
     }
 

@@ -19,7 +19,7 @@ Funcionalidade: Emprestimo e devolucao de livros na biblioteca
 
   Cenario: Nao pode emprestar um livro ja emprestado
     Dado o membro "Bruno" pega emprestado o livro "Clean Code"
-    Quando o membro "Ana" pega emprestado o livro "Clean Code"
+    Quando o membro "Adrias" pega emprestado o livro "Clean Code"
     Entao deve ocorrer o erro "Livro indisponivel"
 
   Cenario: Membro nao pode ultrapassar o limite de emprestimos
@@ -44,9 +44,9 @@ Funcionalidade: Emprestimo e devolucao de livros na biblioteca
   Cenario: Devolver um livro liberado permite novo emprestimo
     Dado o membro "Bruno" pega emprestado o livro "Duna"
     E o membro "Bruno" devolve o livro "Duna" no prazo
-    Quando o membro "Ana" pega emprestado o livro "Duna"
+    Quando o membro "Adrias" pega emprestado o livro "Duna"
     Entao nao deve ocorrer nenhum erro
-    E o membro "Ana" deve ter 1 emprestimos ativos
+    E o membro "Adrias" deve ter 1 emprestimos ativos
 
   Esquema do Cenario: A multa cresce conforme os dias de atraso
     Dado o membro "Bruno" pega emprestado o livro "Duna"

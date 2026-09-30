@@ -35,7 +35,7 @@ Funcionalidade: Comportamento de um membro isolado
       | 1      | 1      | false |
 
   Cenario: Estourar o limite gera erro
-    Dado um membro chamado "Ana" com limite de 2 emprestimos
+    Dado um membro chamado "Adrias" com limite de 2 emprestimos
     Quando o membro tenta receber os emprestimos
       | titulo             |
       | Clean Code         |
