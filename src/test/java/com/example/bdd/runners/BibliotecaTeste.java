@@ -5,5 +5,5 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "classpath:features", tags = "@BibliotecaTeste", glue = "com.example.bdd.steps", monochrome = false, dryRun = false, plugin = {"pretty", "html:target/cucumber-biblioteca-report.html"})
+@CucumberOptions(features = "classpath:features", tags = "@BibliotecaTeste", glue = "com.example.bdd.steps", monochrome = false, dryRun = false, plugin = {"pretty", "html:target/cucumber-biblioteca-report.html", "json:target/cucumber-json/biblioteca.json"})
 public class BibliotecaTeste { }

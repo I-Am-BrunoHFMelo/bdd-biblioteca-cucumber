@@ -5,5 +5,5 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "classpath:features", tags = "@EmprestimoTeste", glue = "com.example.bdd.steps", monochrome = false, dryRun = false, plugin = {"pretty", "html:target/cucumber-emprestimo-report.html"})
+@CucumberOptions(features = "classpath:features", tags = "@EmprestimoTeste", glue = "com.example.bdd.steps", monochrome = false, dryRun = false, plugin = {"pretty", "html:target/cucumber-emprestimo-report.html", "json:target/cucumber-json/emprestimo.json"})
 public class EmprestimoTeste { }

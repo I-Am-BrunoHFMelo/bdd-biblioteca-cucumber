@@ -43,12 +43,33 @@ para variar os dados.
 
 ## Como rodar
 
+Com o Maven instalado no sistema, use `mvn`. Se não tiver Maven instalado, use
+o wrapper que acompanha o projeto (`.\mvnw` no PowerShell, `./mvnw` no
+Linux/macOS) — ele baixa a versão correta automaticamente.
+
 ```bash
-./mvnw test          # Linux/macOS
-mvnw.cmd test        # Windows
+mvn test             # roda os testes (Maven instalado)
+.\mvnw test          # Windows / PowerShell (via wrapper)
+./mvnw test          # Linux/macOS (via wrapper)
 ```
 
-Cada runner Cucumber gera um relatório HTML em `target/cucumber-*-report.html`.
+Cada runner Cucumber gera um relatório HTML individual em
+`target/cucumber-*-report.html`.
+
+### Relatório consolidado (todos os testes numa página)
+
+```bash
+mvn verify           # Maven instalado
+.\mvnw verify        # Windows / PowerShell
+./mvnw verify        # Linux/macOS
+```
+
+O `verify` roda os testes e agrega os resultados num único relatório HTML rico
+(com gráficos e pass/fail por feature) em:
+
+```
+target/cucumber-html-reports/overview-features.html
+```
 
 ## Nota de aprendizado — locale e `{double}` no Cucumber
 

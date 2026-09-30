@@ -5,5 +5,5 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "classpath:features", tags = "@MembroTeste", glue = "com.example.bdd.steps", monochrome = false, dryRun = false, plugin = {"pretty", "html:target/cucumber-membro-report.html"})
+@CucumberOptions(features = "classpath:features", tags = "@MembroTeste", glue = "com.example.bdd.steps", monochrome = false, dryRun = false, plugin = {"pretty", "html:target/cucumber-membro-report.html", "json:target/cucumber-json/membro.json"})
 public class MembroTeste { }
